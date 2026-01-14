@@ -1,0 +1,42 @@
+{
+  "Playwright Test File": {
+    "prefix": ["pw-test", "playwright-test"],
+    "body": [
+      "// @ts-check",
+      "import { test, expect } from '@playwright/test';",
+      "",
+      "test('$1', async ({ page }) => {",
+      "  await page.goto('${2:https://example.com}');",
+      "",
+      "  $0",
+      "});"
+    ],
+    "description": "Creates a new Playwright test file with TypeScript checking enabled and initial page navigation"
+  },
+  "Page Object Class": {
+    "prefix": "pom",
+    "body": [
+      "// @ts-check",
+      "",
+      "class ${1:PageName} {",
+      "  /**",
+      "   * @param {import('@playwright/test').Page} page",
+      "   */",
+      "  constructor(page) {",
+      "    this.page = page;",
+      "    ${2:// Add locators here}",
+      "    ${3:// this.element = page.locator('selector');}",
+      "  }",
+      "",
+      "  async goto() {",
+      "    await this.page.goto('${4:URL}');",
+      "  }",
+      "",
+      "  ${5:// Add methods here}",
+      "}",
+      "",
+      "module.exports = { ${1:PageName} };"
+    ],
+    "description": "Create a new Page Object Model class"
+  }
+}

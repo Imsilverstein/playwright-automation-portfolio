@@ -1,0 +1,11 @@
+{
+    "files.defaultLanguage": "javascript",
+    "[javascript]": {
+        "files.associations": {
+            "*.spec.js": "javascript"
+        }
+    },
+    "files.associations": {
+        "*.spec.js": "javascript"
+    }
+}
