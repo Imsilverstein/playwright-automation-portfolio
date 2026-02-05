@@ -40,6 +40,56 @@ Containerization: Deployment via Docker to guarantee absolute environment parity
 
 Visual Regression Testing: Incorporating pixel-comparison analysis to detect UI regressions that traditional functional testing might overlook.
 
+**🚀 Getting Started**
+
+To get a local copy up and running, follow these steps.
+
+**📋 Prerequisites**
+
+Ensure you have the following installed:
+
+Node.js (v18 or higher)
+npm (comes with Node.js)
+
+**⚙️ Installation**
+
+Clone the repository:
+git clone https://github.com/Imsilverstein/playwright-automation-portfolio.git
+
+Navigate to the project directory:
+cd playwright-automation-portfolio
+
+Install dependencies:
+npm install
+
+Install Playwright Browsers:
+npx playwright install --with-deps
+
+**🧪 Running Tests**
+
+This framework supports multiple execution modes depending on your needs:
+
+Execute all tests (Headless):
+npx playwright test
+
+Run tests in UI Mode (Interactive):
+npx playwright test --ui
+
+Run tests on a specific browser:
+npx playwright test --project=chromium
+
+Debug tests:
+npx playwright test --debug
+
+**📊 Generating Reports**
+After the tests complete, you can analyze the results using the built-in reporting tools:
+
+HTML Report:
+npx playwright show-report
+
+Allure Report (if configured):
+npm run allure:report
+
 **💼 Professional Profile**
 
 Automation Engineer focused on business outcomes and technical excellence. If you are looking for a professional who doesn't just write code, but designs the quality strategy your product needs to scale with confidence, I invite you to explore this repository and reach out.
