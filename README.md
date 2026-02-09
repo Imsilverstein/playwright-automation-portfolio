@@ -1,4 +1,5 @@
 [![Playwright Tests](https://github.com/Imsilverstein/playwright-automation-portfolio/actions/workflows/playwright.yml/badge.svg)](https://github.com/Imsilverstein/playwright-automation-portfolio/actions/workflows/playwright.yml)
+
 **🎭 Playwright Automation Ecosystem: A Scalable Engineering Approach**
 
 This repository represents a Quality Engineering solution designed to tackle the complexities of automation in enterprise-grade environments. The objective of this framework extends beyond simple test execution; it is built to provide a robust, maintainable, and highly efficient architecture that integrates seamlessly into the Software Development Life Cycle (SDLC).
